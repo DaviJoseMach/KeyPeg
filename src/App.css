@@ -1,5 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
 .App {
   text-align: center;
+  font-family: 'Inter';
+}
+
+h1 {
+  font-family: 'Inter';
+  color: #303030;
+  font-weight: 800;
+  font-size: 50px;
+}
+
+h2 {
+  color: #0000009f;
+  font-weight: 300;
 }
 
 .App-logo {
@@ -12,6 +27,311 @@
     animation: App-logo-spin infinite 20s linear;
   }
 }
+
+/* Estilos para o input de texto */
+.texto {
+  width: 100%;
+  /* Tamanho completo, ou ajuste conforme necessário */
+  max-width: 600px;
+  /* Limite de largura */
+  padding: 12px;
+  /* Espaçamento interno */
+  border-radius: 25px;
+  /* Bordas arredondadas */
+  border: 1px solid #ccc;
+  /* Borda cinza clara */
+  font-size: 16px;
+  /* Tamanho da fonte */
+  outline: none;
+  /* Remove a borda de foco padrão */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  /* Sombra leve */
+  transition: box-shadow 0.3s ease-in-out;
+  /* Animação suave */
+}
+
+.texto:focus {
+  box-shadow: 0 6px 12px rgba(0, 123, 255, 0.5);
+  /* Sombra azul ao focar */
+  border-color: #007bff;
+  /* Muda a cor da borda no foco */
+}
+
+.uuu {
+  list-style-type: none;
+  padding-left: 0;
+  /* Remove a indentação padrão da lista */
+}
+
+.uuu li {
+  margin: 15px 0;
+  /* Margem vertical */
+}
+
+.alert {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #007bff;
+  /* Azul com transparência */
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+  /* Transições para opacidade e transformação */
+  opacity: 0;
+  /* Começa invisível */
+  transform: translateY(90px);
+  /* Move para cima durante a animação de entrada */
+  z-index: 1000;
+  /* Certifique-se de que o alerta esteja acima de outros elementos */
+}
+
+.alert.show {
+  opacity: 1;
+  /* Torna visível */
+  transform: translateY(0);
+  /* Volta à posição original */
+}
+
+h3 {
+  color: rgba(0, 0, 0, 0.705);
+}
+
+.cards {
+  margin: 45px;
+  display: flex;
+  /* Adiciona um contêiner flexível */
+  justify-content: center;
+  /* Centraliza horizontalmente */
+}
+
+.cards-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  /* 3 colunas */
+  gap: 20px;
+  /* Espaçamento entre os cards */
+  max-width: 1200px;
+  /* Define um limite máximo de largura para a grid */
+  width: 100%;
+  /* Certifica-se de que a grid ocupe 100% da largura do contêiner */
+}
+
+.card {
+  background-color: #ffffff;
+  /* Cor de fundo */
+  color: #000;
+  /* Cor do texto (preto para melhor contraste) */
+  border-radius: 5px;
+  max-width: 300px;
+  border: 1px solid #007bff85;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 6px 6px 0px #007bffcc;
+  /* Sombra sólida forte, com deslocamento à direita e para baixo */
+  transition: transform 0.3s;
+}
+
+
+.card i {
+  font-size: 40px;
+  /* Tamanho do ícone */
+  color: black;
+  margin-bottom: 10px;
+  /* Espaçamento abaixo do ícone */
+}
+
+.card h3 {
+  margin: 10px 0;
+  /* Espaçamento acima e abaixo do título */
+}
+
+.card p {
+  font-size: 14px;
+  /* Tamanho do subtítulo */
+}
+
+/* Efeito de hover nos cards */
+.card:hover {
+  transform: translateY(-5px);
+  /* Levanta o card ao passar o mouse */
+}
+
+
+.alert.hide {
+  opacity: 0;
+  /* Torna invisível */
+  transform: translateY(90px);
+  /* Move para baixo durante a animação de saída */
+}
+
+
+
+.uuu li code {
+  display: block;
+  padding: 8px 12px;
+  border: 1px solid #00000096;
+  border-radius: 4px;
+  background-color: #ffffff00;
+  font-family: monospace;
+  font-size: 14px;
+  color: #333;
+  max-width: 100%;
+  /* O quadradinho não ultrapassa o tamanho do container */
+  width: fit-content;
+  /* Ajusta o tamanho ao conteúdo */
+  overflow-wrap: break-word;
+  /* Quebra a palavra se for muito longa */
+  text-align: center;
+  /* Centraliza o texto dentro do quadrado */
+  transition: box-shadow 0.2s ease-in-out;
+  /* Animação suave */
+}
+
+.uuu li code:hover {
+  cursor: pointer;
+  box-shadow: 0 6px 12px rgba(0, 123, 255, 0.137);
+  /* Sombra azul ao focar */
+  border-color: #007bff;
+  /* Muda a cor da borda no foco */
+}
+
+
+/* Estilos para o botão */
+.btn {
+  padding: 10px 20px;
+  /* Tamanho do botão */
+  margin-top: 25px;
+  border-radius: 8px;
+  /* Bordas levemente arredondadas */
+  border: 1px solid #007bff;
+  background-color: #ffffff;
+  /* Cor de fundo azul */
+  color: rgba(0, 0, 0, 0.795);
+  /* Cor do texto */
+  font-size: 16px;
+  /* Tamanho da fonte */
+  cursor: pointer;
+  /* Aponta que é clicável */
+  box-shadow: 4px 4px 0px #007bff;
+  /* Sombra azul mais intensa */
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  /* Animação suave */
+}
+
+.btn:hover {
+  background-color: #ffffff;
+  /* Azul mais escuro no hover */
+}
+
+.stats {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  /* 4 colunas */
+  gap: 20px;
+  /* Espaçamento entre os cards */
+  margin: 65px;
+}
+
+.stat {
+  background-color: #ffffff;
+  /* Cor de fundo */
+  color: #333;
+  /* Cor do texto */
+  border-radius: 8px;
+  border: 1px solid #0077ff;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 3px 3px 0px #0077ff;
+  /* Sombra suave */
+  transition: transform 0.3s;
+}
+
+.stat:hover {
+  transform: translateY(-5px);
+  /* Efeito de levantar ao passar o mouse */
+}
+
+.d {
+
+  color: #0077ff !important;
+  margin-right: 20px;
+}
+
+.apoietxt {
+  color: #0077ff;
+  font-weight: 800;
+  font-size: 30px;
+  margin-top: 100px;
+  animation: colorChange 2s infinite;
+  /* Animação para mudar de cor */
+}
+
+/* Definição da animação */
+@keyframes colorChange {
+  0% {
+    color: #0077ff;
+    /* Azul inicial */
+  }
+
+  25% {
+    color: #ff0000;
+    /* Vermelho */
+  }
+
+  50% {
+    color: #00ff00;
+    /* Verde */
+  }
+
+  75% {
+    color: #ffa500;
+    /* Laranja */
+  }
+
+  100% {
+    color: #0077ff;
+    /* Volta ao azul */
+  }
+}
+
+img {
+  width: 500px;
+}
+
+.doze {
+  background-color: #0077ff;
+  padding: 5px 5px;
+  font-size: 20px;
+  font-style: italic;
+  color: white;
+}
+
+.stat i {
+  font-size: 40px;
+  /* Tamanho do ícone */
+  color: #007bff;
+  /* Cor do ícone */
+  margin-bottom: 10px;
+  /* Espaço abaixo do ícone */
+}
+
+.stat h2 {
+  font-size: 2em;
+  /* Tamanho do número */
+  margin: 10px 0;
+  /* Margens para o título */
+}
+
+.stat p {
+  font-size: 1em;
+  /* Tamanho do subtítulo */
+  color: #666;
+  /* Cor do subtítulo */
+}
+
 
 .App-header {
   background-color: #282c34;
@@ -32,7 +352,71 @@
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
+  }
+}
+
+@media (max-width: 768px) {
+
+  /* Ajustes para cards em dispositivos móveis */
+  .cards-container {
+    grid-template-columns: 1fr;
+    /* 1 coluna em telas menores */
+    justify-items: center;
+    /* Centraliza cada card */
+  }
+
+  .card {
+    max-width: 100%;
+    /* Garante que o card ocupe toda a largura disponível */
+    margin: 0 auto;
+    /* Centraliza o card */
+  }
+
+  /* Ajustes para stats */
+  .stats {
+    display: grid;
+    grid-template-columns: 1fr;
+    /* 1 coluna em telas menores */
+    justify-items: center;
+    /* Centraliza cada stat */
+  }
+
+  .stat {
+    max-width: 100%;
+    /* Garante que cada stat ocupe toda a largura disponível */
+  }
+
+  img {
+    width: 300px;
+  }
+
+
+
+  .doze {
+    font-size: 14px;
+    padding: 2px 2px;
+  }
+
+  .texto {
+    width: 80%;
+    /* Tamanho completo */
+    max-width: 380px;
+    /* Limite de largura */
+    margin: 5px auto;
+    /* Centraliza o texto */
+  }
+
+  .apoietxt {
+    text-align: center;
+    width: 70%;
+    margin: 25px auto;
+    /* Centraliza o texto */
+  }
+
+  .sugt {
+    width: 100%;
   }
 }

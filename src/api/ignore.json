@@ -1,0 +1,11 @@
+{
+    "stopWords": [
+      "a", "de", "o", "que", "e", "do", "da", "em", "um", "para", "é", "com", "não", "uma", "os", "no", "se", "na", 
+      "por", "mais", "as", "dos", "como", "mas", "foi", "ao", "ele", "das", "tem", "à", "seu", "sua", "ou", "ser",
+      "quando", "muito", "há", "nos", "já", "está", "eu", "também", "só", "pelo", "pela", "até", "isso", "ela", "entre",
+      "depois", "sem", "mesmo", "aos", "ter", "seus", "quem", "nas", "me", "esse", "eles", "estão", "você", "tinha",
+      "dela", "nele", "porque", "lhe", "qual", "onde", "nós", "vocês", "então", "dele", "como", "algum", "outra", 
+      "quais", "são", "deste", "estava", "nossa", "dessa", "aquele", "são", "tudo", "num", "cá", "aquela", "bem"
+    ]
+  }
+  

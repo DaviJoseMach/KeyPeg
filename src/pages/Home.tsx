@@ -169,21 +169,31 @@ const Home = () => {
       </section>
 
       <section id='apoie'>
-        <div className="donate-section">
-          <h2 className='apoietxt'>Ajude-nos a continuar!</h2>
-          <div className='ajudat'>
-            <p>
-              Gostou do nosso site? Estamos buscando <strong className='doze'>12 reais</strong> para renovar nosso domínio!
-              Qualquer contribuição, por menor que seja, faz uma grande diferença!
-            </p>
-            <p>
-              Escaneie o QR code abaixo e ajude-nos a manter este projeto no ar!
-            </p>
-          </div>
-          <img src="/qrcodefordoaciont.jpg" alt="QR Code para doações" className="qr-code" />
-          <p>Obrigado pelo seu apoio!</p>
-        </div>
-      </section>
+  <div className="donate-section">
+    <h2 className='apoietxt'>Ajude-nos a continuar!</h2>
+    <div className='ajudat'>
+      <p>
+        Gostou do nosso site? Estamos buscando <strong className='doze'>155 reais</strong> para garantir um servidor e banco de dados!
+        Qualquer contribuição, por menor que seja, faz uma grande diferença!
+      </p>
+      <p>
+        Escaneie o QR code abaixo e ajude-nos a manter este projeto no ar!
+      </p>
+    </div>
+    <img src="/qrcodefordoaciont.jpg" alt="QR Code para doações" className="qr-code" />
+
+    <h3>Progresso</h3>
+
+    
+    <div className="progress-container">
+      <div className="progress-bar" style={{ width: "6%" }}></div> 
+      <span className="progress-text">R$6 arrecadados de R$155</span>
+    </div>
+
+    <p>Obrigado pelo seu apoio!</p>
+  </div>
+</section>
+
 
       < Footer />
     </div>

@@ -234,6 +234,33 @@ h3 {
   /* Espaçamento entre os cards */
   margin: 65px;
 }
+.progress-container {
+  position: relative;
+  width: 30%; /* Ocupa 50% da largura do contêiner pai */
+  background-color: #ffffff; /* Cor de fundo da barra */
+  border-radius: 12px; /* Cantos arredondados */
+  overflow: hidden; /* Esconde o conteúdo que ultrapassa */
+  margin: 15px auto; /* Margem automática para centralizar */
+  border: 1px solid #000000; /* Borda azul clarinha */
+}
+
+.progress-bar {
+  height: 25px; /* Aumenta a altura da barra */
+  background-color: #76c7c0; /* Cor da barra */
+  width: 0; /* Inicia com 0% */
+  transition: width 0.3s ease; /* Transição suave */
+  border-radius: 12px; /* Cantos arredondados na barra */
+}
+
+.progress-text {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  font-weight: bold; /* Texto em negrito */
+  color: #333; /* Cor do texto */
+}
+
 
 .stat {
   background-color: #ffffff;
@@ -392,9 +419,9 @@ img {
   img {
     width: 300px;
   }
-
-
-
+  .progress-text {
+    display: none; /* Esconde o texto em telas menores que 768px */
+  }
   .doze {
     font-size: 14px;
     padding: 2px 2px;
